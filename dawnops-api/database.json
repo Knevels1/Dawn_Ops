@@ -1,0 +1,13 @@
+{
+  "users": [],
+  "userType": [
+    {
+      "id": 1,
+      "usersType": "Admin"
+    },
+    {
+      "id": 2,
+      "usersType": "Regular"
+    }
+  ]
+}
