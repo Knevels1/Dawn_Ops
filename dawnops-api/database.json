@@ -1,5 +1,13 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "mcrib@gmail.com",
+      "password": "19972011",
+      "name": "Nathan",
+      "userTypeId": 2,
+      "id": 1
+    }
+  ],
   "userType": [
     {
       "id": 1,
