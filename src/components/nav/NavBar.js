@@ -12,10 +12,10 @@ export const NavBar = (props) => {
                 <Link className="navbar__link" to="/clips">Clips</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/Games">Customers</Link>
+                <Link className="navbar__link" to="/Games">Games</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/Chat">Employees</Link>
+                <Link className="navbar__link" to="/Chat">Chat</Link>
             </li>
             <li className="navbar__item">
                 <Link className="navbar__link"  to="https://www.twitch.tv/dawn_ops">Live Stream</Link>
