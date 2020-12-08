@@ -10,7 +10,7 @@ export const Login = props => {
     const passwordDialog = useRef()
 
     const existingUserCheck = () => {
-        return fetch(`http://localhost:8088/customers?email=${email.current.value}`)
+        return fetch(`http://localhost:8088/users?email=${email.current.value}`)
             .then(_ => _.json())
             .then(user => user.length ? user[0] : false)
     }
@@ -21,7 +21,7 @@ export const Login = props => {
         existingUserCheck()
             .then(exists => {
                 if (exists && exists.password === password.current.value) {
-                    localStorage.setItem("kennel_customer", exists.id)
+                    localStorage.setItem("dawnops_user", exists.id)
                     props.history.push("/")
                 } else if (exists && exists.password !== password.current.value) {
                     passwordDialog.current.showModal()
@@ -43,7 +43,7 @@ export const Login = props => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Nashville Kennels</h1>
+                    <h1>Welcome to Dawn Ops</h1>
                     <h2>Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
@@ -69,7 +69,7 @@ export const Login = props => {
                 </form>
             </section>
             <section className="link--register">
-                <Link to="/register">Not a member yet?</Link>
+                <Link className="registerlink" to="/register">Not a member yet?</Link>
             </section>
         </main>
     )
