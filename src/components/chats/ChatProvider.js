@@ -20,24 +20,12 @@ export const ChatProvider = (props) => {
       .then(setChat)
       // .then(parsedLocations => setLocations(parsedLocations))
   }
-
-  const addChat = chat => {
-    return fetch("http://localhost:8088/chats", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(chat)
-    })
-      .then(getChats)
-  }
-   const removeChat = chatsId => {
-    return fetch(`http://localhost:8088/Chat/${chatsId}`, {
+   const removeChat = chatId => {
+    return fetch(`http://localhost:8088/chats/${chatId}`, {
         method: "DELETE"
     })
         .then(getChats)
-}
-
+  }
   /*
       You return a context provider which has the
       `locations` state, the `addLocation` function,
@@ -47,7 +35,7 @@ export const ChatProvider = (props) => {
   return (
     <ChatContext.Provider value={
       {
-      chats, addChat, getChats, removeChat
+      chats, getChats, removeChat
       }
     }>
       {props.children}

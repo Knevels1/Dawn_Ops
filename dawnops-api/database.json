@@ -1,18 +1,18 @@
 {
   "users": [
     {
-      "email": "mcrib@gmail.com",
-      "password": "132",
-      "name": "Nathan",
-      "userTypeId": 1,
-      "id": 1
-    },
-    {
       "email": "sneakysnake@gmail.com",
       "password": "143",
       "name": "dimsdome",
       "userTypeId": 2,
       "id": 2
+    },
+    {
+      "email": "mcrib@gmail.com",
+      "password": "132",
+      "name": "Nathan",
+      "userTypeId": 1,
+      "id": 3
     }
   ],
   "userType": [
@@ -36,9 +36,9 @@
   ],
   "chats": [
     {
-      "id": 1,
-      "message": "such an amazing site for real",
-      "name": "Nathan"
+      "id": 3,
+      "message": "Kyle is the TRIPPLE OGGGGGG",
+      "name": "definitely not kyle"
     }
   ]
 }

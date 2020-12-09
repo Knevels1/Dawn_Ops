@@ -20,7 +20,7 @@ export const Login = props => {
 
         existingUserCheck()
             .then(exists => {
-            if (exists && exists.password === password.current.value && exists.userTypeId === 1) {
+            if (exists && exists.password === password.current.value && exists && exists.userTypeId === 1) {
                 localStorage.setItem("Admin", exists.id)
                 localStorage.setItem("dawnops_user", exists.id)
                 props.history.push("/")
