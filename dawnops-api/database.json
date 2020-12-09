@@ -2,10 +2,17 @@
   "users": [
     {
       "email": "mcrib@gmail.com",
-      "password": "19972011",
+      "password": "132",
       "name": "Nathan",
-      "userTypeId": 2,
+      "userTypeId": 1,
       "id": 1
+    },
+    {
+      "email": "sneakysnake@gmail.com",
+      "password": "143",
+      "name": "dimsdome",
+      "userTypeId": 2,
+      "id": 2
     }
   ],
   "userType": [
@@ -20,12 +27,18 @@
   ],
   "bios": [
     {
-      "id":1,
+      "id": 1,
       "about": "Welcome to DawnOps a Community for not only streamers and gamers but a community that anyone can call family",
-      "age":"DawnOps has been around for about 3yrs and was first founded in 2017 when the leader Dawny got stationed in Germany",
+      "age": "DawnOps has been around for about 3yrs and was first founded in 2017 when the leader Dawny got stationed in Germany",
       "app": "this app was made so that the community of Dawn Ops would have better access to the content from DawnOps",
       "continue": "We are so happy that you decided to use our app, Our wish is for this app to help connect Dawn Ops to people who are not on Twitch or Youtube and gives people a better connection to the Dawn Ops community overall."
     }
   ],
-  "chats": []
+  "chats": [
+    {
+      "id": 1,
+      "message": "such an amazing site for real",
+      "name": "Nathan"
+    }
+  ]
 }

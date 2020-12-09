@@ -20,10 +20,14 @@ export const Login = props => {
 
         existingUserCheck()
             .then(exists => {
-                if (exists && exists.password === password.current.value) {
+            if (exists && exists.password === password.current.value && exists.userTypeId === 1) {
+                localStorage.setItem("Admin", exists.id)
+                localStorage.setItem("dawnops_user", exists.id)
+                props.history.push("/")
+                }else if (exists && exists.password === password.current.value) {
                     localStorage.setItem("dawnops_user", exists.id)
                     props.history.push("/")
-                } else if (exists && exists.password !== password.current.value) {
+                }else if (exists && exists.password !== password.current.value) {
                     passwordDialog.current.showModal()
                 } else if (!exists) {
                     existDialog.current.showModal()

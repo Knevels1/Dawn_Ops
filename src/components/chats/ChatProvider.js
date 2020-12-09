@@ -9,7 +9,7 @@ export const ChatContext = React.createContext()
 /*
  This component establishes what data can be used.
  */
-export const chatProvider = (props) => {
+export const ChatProvider = (props) => {
 
   const [chats, setChat] = useState([]) 
   // useState returns [initial value of state variable, a function to set the value of the state variable]
@@ -31,6 +31,12 @@ export const chatProvider = (props) => {
     })
       .then(getChats)
   }
+   const removeChat = chatsId => {
+    return fetch(`http://localhost:8088/Chat/${chatsId}`, {
+        method: "DELETE"
+    })
+        .then(getChats)
+}
 
   /*
       You return a context provider which has the
@@ -41,7 +47,7 @@ export const chatProvider = (props) => {
   return (
     <ChatContext.Provider value={
       {
-      chats, addChat, getChats
+      chats, addChat, getChats, removeChat
       }
     }>
       {props.children}
