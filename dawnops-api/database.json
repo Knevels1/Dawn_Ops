@@ -34,6 +34,12 @@
       "continue": "We are so happy that you decided to use our app, Our wish is for this app to help connect Dawn Ops to people who are not on Twitch or Youtube and gives people a better connection to the Dawn Ops community overall."
     }
   ],
+  "clips": [
+    {
+      "id":1,
+      "url":"https://www.twitch.tv/videos/814181261"
+    }
+  ],
   "chats": [
     {
       "id": 3,
