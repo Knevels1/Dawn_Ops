@@ -8,6 +8,7 @@ export const Game = ({game}) => {
     if (localStorage.getItem("Admin")){ return (
       <section className="game">
       <h3 className="game__name">{game.name}</h3>
+    <img src={game.path} className="game_image" width="200px" height="200px"/>
       <div className="game__description">{game.description}</div>
       <button className="btn--release"
           onClick={() => { if (localStorage.getItem("Admin")){
@@ -21,6 +22,7 @@ export const Game = ({game}) => {
   return (
     <section className="game">
       <h3 className="game__name">{game.name}</h3>
+      <img src={game.path} className="game_image" />
       <div className="game__description">{game.description}</div>
       </section> ) }
 }

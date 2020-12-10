@@ -13,6 +13,7 @@ export const GameForm = () => {
   if (localStorage.getItem("Admin")){ return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <input name="name" placeholder="Title of the Game" ref={register} /> {/* register an input */}
+      <input name="path" placeholder="Image URL" ref={register} />
       <input name="description" placeholder="whats the game about?" ref={register} />
       <input type="submit" />
     </form>
