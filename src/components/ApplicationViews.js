@@ -2,6 +2,7 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { BioList } from "./bio/BioList"
 import { BioProvider } from "./bio/BioProvider"
+import { ChatInput } from "./chats/ChatInput"
 import { ChatList } from "./chats/ChatList"
 import { ChatProvider } from "./chats/ChatProvider"
 
@@ -15,7 +16,10 @@ export const ApplicationViews = (props) => {
         </BioProvider>
         <ChatProvider>
             <Route exact path="/Chat" render={
-                props => <ChatList {...props} />
+                props =><>
+                    <ChatInput />
+                    <ChatList {...props} />
+                    </>
             } />
         </ChatProvider>
         </>

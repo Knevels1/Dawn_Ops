@@ -5,7 +5,7 @@ import "./Chat.css"
 export const Chat = ({chat}) => {
     const { removeChat} = useContext(ChatContext)
 
-    return (
+    if (localStorage.getItem("Admin")){ return (
       <section className="chat">
       <h3 className="chat__message">{chat.message}</h3>
       <div className="chat__sender">--{chat.name}</div>
@@ -13,13 +13,14 @@ export const Chat = ({chat}) => {
           onClick={() => { if (localStorage.getItem("Admin")){
             console.log("bye bye")
             removeChat(chat.id)
-          }else if (localStorage.getItem("dawnops_user")) {
-            alert("you do not have persmission to complete this action")
-          }
-          // Code to delete animal from database
-          // releaseAnimal(props.match.params.animalId)
-        }}
+          }}}
         >delete</button>
         </section>
         )
+}else if (localStorage.getItem("dawnops_user")) {
+  return (
+    <section className="chat">
+      <h3 className="chat__message">{chat.message}</h3>
+      <div className="chat__sender">--{chat.name}</div>
+      </section> ) }
 }

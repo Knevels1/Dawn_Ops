@@ -1,13 +1,18 @@
 .chats {
     display: flex;
+      flex-grow: 7em;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   
   .chat {
       flex-basis: 50%;
-      margin: 5em;
-      padding: 1em;
-      border: 1px solid goldenrod;
       background-color: tan;
+      margin: 1em;
+      padding: 1em;
+      max-height: 5em;
+  }
+  .chatContainer{
+      max-height: 5em;
   }
