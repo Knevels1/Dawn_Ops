@@ -3,7 +3,7 @@ import ReactPlayer from "react-player"
 import { ClipContext } from "./ClipProvider"
 
 export const ClipList = () => {
-    const { clips, getClips } = useContext(ClipContext)
+    const { getClips } = useContext(ClipContext)
 
     useEffect(
         () => {
