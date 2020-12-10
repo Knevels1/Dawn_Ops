@@ -37,7 +37,8 @@
   "clips": [
     {
       "id": 1,
-      "url": "https://www.twitch.tv/videos/814181261"
+      "name":"Call of Duty Cold War",
+      "url": "https://www.youtube.com/watch?v=ahVznIkZj4I&t=4s"
     }
   ],
   "chats": [
