@@ -13,13 +13,6 @@
       "name": "Nathan",
       "userTypeId": 1,
       "id": 3
-    },
-    {
-      "email": "charlie@hotmail.com",
-      "password": "136",
-      "name": "Nathan",
-      "userTypeId": 2,
-      "id": 4
     }
   ],
   "userType": [
@@ -46,10 +39,34 @@
       "id": 3,
       "message": "Kyle is the TRIPPLE OGGGGGG",
       "name": "definitely not kyle"
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "name": "Pubg Mobile",
+      "description": "PLAYERUNKNOWN'S BATTLEGROUNDS (PUBG) is a competitive survival shooter, Players are dropped into a wide, open area, and they must fight to the death - all while the battlefield shrinks"
     },
     {
-      "message": "America is the best country in the world",
-      "id": 4
+      "id": 2,
+      "name": "Call of Duty WARZONE",
+      "description": "Warzone allows online multiplayer combat among 150 players. This is one of my fav games because I love battle royal."
+    },
+    {
+      "id": 3,
+      "name": "Call of Duty Modern Warfar",
+      "description": "I Absolutely love the campain on this call of duty and overall its just a good time and fun game to play."
+    },
+    {
+      "id": 4,
+      "name": "Call of Duty Cold War",
+      "description": "INCREDIBLE!!!! This not only brings in a very imersive campain but brings new light to my favorite mode ZOMBIES, Honestly a masterpiece and I could spend days slaying zombodies."
+    },
+    {
+      "message": "Among Us",
+      "name": "Among Us",
+      "description": "A game about deceiving others so that you don't get the boot hahahaha ",
+      "id": 5
     }
   ]
 }
