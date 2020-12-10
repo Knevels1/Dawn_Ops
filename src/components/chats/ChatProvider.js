@@ -11,7 +11,7 @@ export const ChatContext = React.createContext()
  */
 export const ChatProvider = (props) => {
 
-  const [chats, setChat] = useState([]) 
+  const [chats, setChat,] = useState([]) 
   // useState returns [initial value of state variable, a function to set the value of the state variable]
 
   const getChats = () => {
@@ -26,13 +26,13 @@ export const ChatProvider = (props) => {
     })
         .then(getChats)
   }
-  const addChat = chat => {
-    return fetch("http://localhost:8088/chats", {
+  const addChat = (chats) => {
+    return fetch(`http://localhost:8088/chats`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(chat)
+      body: JSON.stringify(chats)
     })
       .then(getChats)
   }

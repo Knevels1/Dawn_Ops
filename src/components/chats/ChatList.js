@@ -7,7 +7,7 @@ export const ChatList = () => {
 
     useEffect(
         () => {
-          console.log("CustomerList: Initial render before data")
+          console.log("ChatList: Initial render before data")
           getChats()
         },
         []

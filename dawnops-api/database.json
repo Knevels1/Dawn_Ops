@@ -13,6 +13,13 @@
       "name": "Nathan",
       "userTypeId": 1,
       "id": 3
+    },
+    {
+      "email": "charlie@hotmail.com",
+      "password": "136",
+      "name": "Nathan",
+      "userTypeId": 2,
+      "id": 4
     }
   ],
   "userType": [
@@ -41,10 +48,8 @@
       "name": "definitely not kyle"
     },
     {
-      "id": 4,
-      "message": "Kyle is the TRIPPLE OGGGGGG",
-      "name": "definitely not kyle"
+      "message": "America is the best country in the world",
+      "id": 4
     }
-
   ]
 }
