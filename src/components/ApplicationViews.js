@@ -5,10 +5,13 @@ import { BioProvider } from "./bio/BioProvider"
 import { ChatInput } from "./chats/ChatForm"
 import { ChatList } from "./chats/ChatList"
 import { ChatProvider } from "./chats/ChatProvider"
+import { GameForm } from "./games/GameForm"
+import { GameList } from "./games/GamesList"
+import { GameProvider } from "./games/GamesProvider"
 
 export const ApplicationViews = (props) => {
     return (
-        <>
+    <>
         <BioProvider>
             <Route exact path ="/">
                 <BioList />
@@ -22,6 +25,14 @@ export const ApplicationViews = (props) => {
                     </>
             } />
         </ChatProvider>
-        </>
+        <GameProvider>
+            <Route exact path ="/Games">
+                <GameList />
+            </Route>
+            <Route exact path="/Games" render={
+                props => <GameForm {...props} />
+            } />
+        </GameProvider>
+    </>
     )
 }

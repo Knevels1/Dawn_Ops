@@ -14,7 +14,7 @@ export const ChatList = () => {
       )
     
       return (
-        <>
+      <>
         <div className="chats">
             {chats.map(c => <Chat key={c.id} chat={c} />)}
         </div>

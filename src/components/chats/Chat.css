@@ -1,6 +1,7 @@
 .chats {
     display: flex;
       flex-grow: 7em;
+      max-width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
