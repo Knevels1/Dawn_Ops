@@ -18,12 +18,27 @@ export const ClipProvider = (props) => {
     return fetch("http://localhost:8088/clips")
       .then(res => res.json())
       .then(setClip)
-      // .then(parsedLocations => setLocations(parsedLocations))
+  }
+  const removeClip = clipId => {
+    return fetch(`http://localhost:8088/clips/${clipId}`, {
+      method: "DELETE"
+    })
+    .then(getClips)
+  }
+  const addClip = (clips) => {
+    return fetch(`http://localhost:8088/clips`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(clips)
+    })
+    .then(getClips)
   }
   return (
     <ClipContext.Provider value={
       {
-      clips, getClips
+        clips, getClips, addClip, removeClip
       }
     }>
       {props.children}

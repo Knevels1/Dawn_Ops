@@ -1,13 +1,13 @@
 import React, { useContext, useEffect } from "react"
-import ReactPlayer from "react-player"
 import { ClipContext } from "./ClipProvider"
+import { Clip } from "./Clip"
 
 export const ClipList = () => {
-    const { getClips } = useContext(ClipContext)
+    const { clips, getClips } = useContext(ClipContext)
 
     useEffect(
         () => {
-          console.log("GameList: Initial render before data")
+          console.log("ClipList: Initial render before data")
           getClips()
         },
         []
@@ -15,18 +15,9 @@ export const ClipList = () => {
     
       return (
         <>
-        <div>
-      <ReactPlayer
-        url="https://www.twitch.tv/videos/814181261"
-        width= '50%'
-         controls
-      />
-      <ReactPlayer
-        url="https://www.twitch.tv/videos/832302683"
-        width= '50%'
-         controls
-      />
-    </div>,
+        <div className="clips">
+            {clips.map(cl => <Clip key={cl.id} clip={cl} />)}
+        </div>
       </>
       )
 }
