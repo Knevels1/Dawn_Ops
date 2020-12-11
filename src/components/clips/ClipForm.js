@@ -1,20 +1,20 @@
 import React, {useContext} from "react"
 import { useForm } from 'react-hook-form';
-import { GameContext } from "./GamesProvider";
+import { ClipContext } from "./ClipProvider";
 
-export const GameForm = () => {
-    const { addGame} = useContext(GameContext)
+export const ClipForm = () => {
+    const { addClip} = useContext(ClipContext)
 
   const { register, handleSubmit} = useForm(); // initialize the hook
   const onSubmit = (data) => {
-    addGame(data)
+    addClip(data)
   };
 
   if (localStorage.getItem("Admin")){ return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <input name="name" placeholder="Title of the Game" ref={register} /> {/* register an input */}
-      <input name="path" placeholder="Image URL" ref={register} />
-      <input name="description" placeholder="whats the game about?" ref={register} />
+      <input name="name" placeholder="Title" ref={register} /> {/* register an input */}
+      <input name="url" placeholder="Video URL" ref={register} />
+      <input name="description" placeholder="why this video?" ref={register} />
       <input type="submit" />
     </form>
   )

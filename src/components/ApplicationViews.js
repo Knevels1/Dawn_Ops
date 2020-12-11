@@ -5,6 +5,7 @@ import { BioProvider } from "./bio/BioProvider"
 import { ChatInput } from "./chats/ChatForm"
 import { ChatList } from "./chats/ChatList"
 import { ChatProvider } from "./chats/ChatProvider"
+import { ClipForm } from "./clips/ClipForm"
 import { ClipList } from "./clips/ClipList"
 import { ClipProvider } from "./clips/ClipProvider"
 import { GameForm } from "./games/GameForm"
@@ -28,14 +29,17 @@ export const ApplicationViews = (props) => {
             } />
         </ChatProvider>
         <GameProvider>
-            <Route exact path ="/Games">
-                <GameList />
-            </Route>
             <Route exact path="/Games" render={
                 props => <GameForm {...props} />
             } />
+            <Route exact path ="/Games">
+                <GameList />
+            </Route>
         </GameProvider>
         <ClipProvider>
+            <Route exact path="/Clips" render={
+                props => <ClipForm {...props} />
+            } />
             <Route exact path="/Clips" render={
                 props => <ClipList {...props} />
             } />

@@ -36,9 +36,16 @@
   ],
   "clips": [
     {
-      "id": 1,
-      "name":"Call of Duty Cold War",
-      "url": "https://www.youtube.com/watch?v=ahVznIkZj4I&t=4s"
+      "name": "Dominating some Cold War",
+      "url": "https://www.youtube.com/watch?v=ahVznIkZj4I&t=240s",
+      "description": "This was a very fun match and I did exceptionally well in the first half.",
+      "id": 1
+    },
+    {
+      "name": "Dominating some Cold War",
+      "url": "https://www.youtube.com/watch?v=ahVznIkZj4I&t=240s",
+      "description": "This was a very fun match and I did exceptionally well in the first half.",
+      "id": 2
     }
   ],
   "chats": [
