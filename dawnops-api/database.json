@@ -27,6 +27,13 @@
       "name": "jonathen",
       "userTypeId": 1,
       "id": 5
+    },
+    {
+      "email": "Jonathens@gmail.com",
+      "password": "133",
+      "name": "jonathen",
+      "userTypeId": 1,
+      "id": 6
     }
   ],
   "userType": [
