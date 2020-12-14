@@ -20,20 +20,6 @@
       "name": "Jcole",
       "userTypeId": 1,
       "id": 4
-    },
-    {
-      "email": "chatworks@gmail.com",
-      "password": "133",
-      "name": "jonathen",
-      "userTypeId": 1,
-      "id": 5
-    },
-    {
-      "email": "Softdemo@sucks.gamil.com",
-      "password": "156",
-      "name": "softDEMO",
-      "userTypeId": 1,
-      "id": 6
     }
   ],
   "userType": [
@@ -83,12 +69,6 @@
   ],
   "chats": [
     {
-      "message": "This site is the best",
-      "username": "jonathen",
-      "userId": 5,
-      "id": 1
-    },
-    {
       "message": "I totally agree with you jonathan",
       "username": "Nathan",
       "userId": 3,
@@ -101,16 +81,10 @@
       "id": 3
     },
     {
-      "message": "what's up everybody, just watched the clips and lets just say Dawn was killin it",
-      "username": "Jcole",
-      "userId": 4,
+      "message": "Boke but then fixed",
+      "username": "Nathan",
+      "userId": 3,
       "id": 4
-    },
-    {
-      "message": "Nice work on those clips",
-      "username": "dimsdome",
-      "userId": 2,
-      "id": 7
     }
   ],
   "games": [
