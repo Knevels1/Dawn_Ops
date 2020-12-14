@@ -7,13 +7,13 @@ export const ClipForm = () => {
 
   const { register, handleSubmit} = useForm();
   const onSubmit = (data) => {
+    data.userId = parseInt(localStorage.getItem("dawnops_user"))
     addClip(data)
   };
-
   if (localStorage.getItem("Admin")){ return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <input name="name" placeholder="Title" ref={register} />
-      <input name="url" placeholder="Video URL" ref={register} />
+      <input name="url" type="url" placeholder="Video URL" pattern="https://.*" ref={register} />
       <input name="description" placeholder="why this video?" ref={register} />
       <input type="submit" />
     </form>

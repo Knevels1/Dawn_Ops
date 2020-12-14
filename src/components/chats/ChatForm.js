@@ -1,22 +1,17 @@
-import React, {useContext, useRef, useEffect} from "react"
+import React, {useContext, useRef} from "react"
 import { ChatContext } from "./ChatProvider"
 
 
 
 export const ChatInput = () => {
-    const { addChat, getUsers, users} = useContext(ChatContext)
-      useEffect(() => {
-        getUsers()
-      }, [])
+    const { addChat} = useContext(ChatContext)
   
   const message = useRef(null)
-  const usernames = users.find( u => u.id === parseInt(localStorage.getItem("dawnops_user")))
-  console.log(users)
+
   const newMessage = () => {
       
       addChat({
         message: message.current.value,
-        username: usernames.name,
         userId: parseInt(localStorage.getItem("dawnops_user")) })
   }
 

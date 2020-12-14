@@ -9,7 +9,6 @@ export const ChatContext = React.createContext()
 export const ChatProvider = (props) => {
 
   const [chats, setChat] = useState([]) 
-  const [users, setUsers,] = useState([]) 
   // useState returns [initial value of state variable, a function to set the value of the state variable]
 
   const getChats = () => {
@@ -18,10 +17,9 @@ export const ChatProvider = (props) => {
       .then(setChat)
 
   }
-  const getUsers = () => {
-    return fetch("http://localhost:8088/users")
+  const getUsersById = (userId) => {
+    return fetch(`http://localhost:8088/users/${userId}`)
       .then(res => res.json())
-      .then(setUsers)
 
   }
    const removeChat = chatId => {
@@ -43,7 +41,7 @@ export const ChatProvider = (props) => {
   return (
     <ChatContext.Provider value={
       {
-      chats, getChats, removeChat, addChat, getUsers, users
+      chats, getChats, removeChat, addChat, getUsersById
       }
     }>
       {props.children}

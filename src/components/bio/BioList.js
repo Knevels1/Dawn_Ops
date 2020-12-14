@@ -7,7 +7,6 @@ export const BioList = () => {
 
   useEffect(
     () => {
-      console.log("BioList: Initial render before data")
       getBio()
     },
     []
