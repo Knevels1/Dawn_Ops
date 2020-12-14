@@ -11,7 +11,7 @@ export const Clip = ({clip}) => {
       <section className="clip">
       <h3 className="clip__name">{clip.name}</h3>
     <ReactPlayer url={clip.url}
-    width="360px"
+    width="400px"
     controls />
     <div>{clip.description}</div>
       <button className="btn--release"
@@ -27,7 +27,7 @@ export const Clip = ({clip}) => {
     <section className="clip">
       <h3 className="clip__name">{clip.name}</h3>
     <ReactPlayer url={clip.url}
-    width="360px"
+    width="400px"
     controls />
     <div>{clip.description}</div>
       </section> ) }

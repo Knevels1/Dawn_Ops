@@ -20,20 +20,6 @@
       "name": "Jcole",
       "userTypeId": 1,
       "id": 4
-    },
-    {
-      "email": "chatworks@gmail.com",
-      "password": "133",
-      "name": "jonathen",
-      "userTypeId": 1,
-      "id": 5
-    },
-    {
-      "email": "Jonathens@gmail.com",
-      "password": "133",
-      "name": "jonathen",
-      "userTypeId": 1,
-      "id": 6
     }
   ],
   "userType": [
@@ -63,19 +49,25 @@
       "id": 1
     },
     {
-      "name": "Dominating some Cold War",
-      "url": "https://www.youtube.com/watch?v=ahVznIkZj4I&t=240s",
-      "description": "This was a very fun match and I did exceptionally well in the first half.",
-      "id": 2
+      "name": "My Fav AMV",
+      "url": "https://www.youtube.com/watch?v=kP75KyN-YT4",
+      "description": "Testing APP",
+      "id": 3
+    },
+    {
+      "name": "testing vids",
+      "url": "https://www.youtube.com/watch?v=8POIjBnZF0Y",
+      "description": "Testing APP",
+      "id": 4
+    },
+    {
+      "name": "testing vids",
+      "url": "https://www.youtube.com/watch?v=Q9sDPdOZoyo",
+      "description": "Testing APP",
+      "id": 5
     }
   ],
   "chats": [
-    {
-      "message": "This site is the best",
-      "username": "jonathen",
-      "userId": 5,
-      "id": 1
-    },
     {
       "message": "I totally agree with you jonathan",
       "username": "Nathan",
@@ -89,43 +81,19 @@
       "id": 3
     },
     {
-      "message": "what's up everybody, just watched the clips and lets just say Dawn was killin it",
-      "username": "Jcole",
-      "userId": 4,
+      "message": "Boke but then fixed",
+      "username": "Nathan",
+      "userId": 3,
       "id": 4
     },
     {
-      "message": "This is EPIC!!!!!",
+      "message": "sdfgsdaf",
       "username": "dimsdome",
       "userId": 2,
       "id": 5
-    },
-    {
-      "message": "YO YO YO ",
-      "username": "Nathan",
-      "userId": 3,
-      "id": 6
-    },
-    {
-      "message": "Nice work on those clips",
-      "username": "dimsdome",
-      "userId": 2,
-      "id": 7
-    },
-    {
-      "message": "sdfgsdf",
-      "username": "dimsdome",
-      "userId": 2,
-      "id": 8
     }
   ],
   "games": [
-    {
-      "id": 1,
-      "name": "Pubg Mobile",
-      "path": "./images/Pubg-mobile.jpg",
-      "description": "PLAYERUNKNOWN'S BATTLEGROUNDS (PUBG) is a competitive survival shooter, Players are dropped into a wide, open area, and they must fight to the death - all while the battlefield shrinks"
-    },
     {
       "id": 2,
       "name": "Call of Duty WARZONE",

@@ -5,14 +5,14 @@ import { GameContext } from "./GamesProvider";
 export const GameForm = () => {
     const { addGame} = useContext(GameContext)
 
-  const { register, handleSubmit} = useForm(); // initialize the hook
+  const { register, handleSubmit} = useForm(); 
   const onSubmit = (data) => {
     addGame(data)
   };
 
   if (localStorage.getItem("Admin")){ return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <input name="name" placeholder="Title of the Game" ref={register} /> {/* register an input */}
+      <input name="name" placeholder="Title of the Game" ref={register} />
       <input name="path" placeholder="Image URL" ref={register} />
       <input name="description" placeholder="whats the game about?" ref={register} />
       <input type="submit" />

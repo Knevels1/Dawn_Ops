@@ -1,26 +1,28 @@
-import React, {useContext, useRef, useEffect, useState} from "react"
+import React, {useContext, useRef, useEffect} from "react"
 import { ChatContext } from "./ChatProvider"
 
 
 
 export const ChatInput = () => {
-  const { addChat, users} = useContext(ChatContext)
+    const { addChat, getUsers, users} = useContext(ChatContext)
+      useEffect(() => {
+        getUsers()
+      }, [])
   
   const message = useRef(null)
-  const user = users.find(u =>  u.id=== parseInt(localStorage.getItem("dawnops_user") ))
-  
+  const usernames = users.find( u => u.id === parseInt(localStorage.getItem("dawnops_user")))
+  console.log(users)
   const newMessage = () => {
-    const username = user.name
       
       addChat({
         message: message.current.value,
-        username,
+        username: usernames.name,
         userId: parseInt(localStorage.getItem("dawnops_user")) })
   }
 
   return (
     <form>
-      <input type="text" placeholder="Say what's on your mind" ref={message} /> {/* register an input */}
+      <input type="text" placeholder="Say what's on your mind" ref={message} />
       <button type="submit"
                 onClick={evt => {
                     evt.preventDefault() // Prevent browser from submitting the form
