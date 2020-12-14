@@ -5,14 +5,14 @@ import { ClipContext } from "./ClipProvider";
 export const ClipForm = () => {
     const { addClip} = useContext(ClipContext)
 
-  const { register, handleSubmit} = useForm(); // initialize the hook
+  const { register, handleSubmit} = useForm();
   const onSubmit = (data) => {
     addClip(data)
   };
 
   if (localStorage.getItem("Admin")){ return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <input name="name" placeholder="Title" ref={register} /> {/* register an input */}
+      <input name="name" placeholder="Title" ref={register} />
       <input name="url" placeholder="Video URL" ref={register} />
       <input name="description" placeholder="why this video?" ref={register} />
       <input type="submit" />
