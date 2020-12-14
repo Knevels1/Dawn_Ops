@@ -4,15 +4,7 @@ import { ChatContext } from "./ChatProvider"
 
 
 export const ChatInput = () => {
-  const { addChat, getUsers, users} = useContext(ChatContext)
-    const [usernames, setUsers] = useState({})
-    useEffect(() => {
-      getUsers()
-    }, [])
-  //   useEffect(() => {
-  //     const username = users.find(u => u.id === parseInt(localStorage.getItem("dawnops_user")))
-  //     setUsers(username)
-  // }, [users])
+  const { addChat, users} = useContext(ChatContext)
   
   const message = useRef(null)
   const user = users.find(u =>  u.id=== parseInt(localStorage.getItem("dawnops_user") ))
