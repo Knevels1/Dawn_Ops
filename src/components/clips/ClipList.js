@@ -7,7 +7,6 @@ export const ClipList = () => {
 
     useEffect(
         () => {
-          console.log("ClipList: Initial render before data")
           getClips()
         },
         []

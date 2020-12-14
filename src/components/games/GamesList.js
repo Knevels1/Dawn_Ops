@@ -7,7 +7,6 @@ export const GameList = () => {
 
     useEffect(
         () => {
-          console.log("GameList: Initial render before data")
           getGames()
         },
         []
