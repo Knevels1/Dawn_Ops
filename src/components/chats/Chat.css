@@ -8,11 +8,11 @@
   }
   
   .chat {
-      flex-basis: 50%;
       background-color: tan;
+      width: 80%;
+      height: fit-content;
       margin: 1em;
       padding: 1em;
-      max-height: 5em;
   }
   .chatContainer{
       max-height: 5em;

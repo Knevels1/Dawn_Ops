@@ -13,6 +13,20 @@
       "name": "Nathan",
       "userTypeId": 1,
       "id": 3
+    },
+    {
+      "email": "jcole@real.com",
+      "password": "122",
+      "name": "Jcole",
+      "userTypeId": 1,
+      "id": 4
+    },
+    {
+      "email": "chatworks@gmail.com",
+      "password": "133",
+      "name": "jonathen",
+      "userTypeId": 1,
+      "id": 5
     }
   ],
   "userType": [
@@ -50,9 +64,34 @@
   ],
   "chats": [
     {
-      "id": 3,
-      "message": "Kyle is the TRIPPLE OGGGGGG",
-      "name": "definitely not kyle"
+      "message": "This site is the best",
+      "username": "jonathen",
+      "userId": 5,
+      "id": 1
+    },
+    {
+      "message": "I totally agree with you jonathan",
+      "username": "Nathan",
+      "userId": 3,
+      "id": 2
+    },
+    {
+      "message": "I bet this site took a minute to build",
+      "username": "Nathan",
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "message": "what's up everybody, just watched the clips and lets just say Dawn was killin it",
+      "username": "Jcole",
+      "userId": 4,
+      "id": 4
+    },
+    {
+      "message": "This is EPIC!!!!!",
+      "username": "dimsdome",
+      "userId": 2,
+      "id": 5
     }
   ],
   "games": [
