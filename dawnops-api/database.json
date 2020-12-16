@@ -1,25 +1,18 @@
 {
   "users": [
     {
-      "email": "sneakysnake@gmail.com",
-      "password": "143",
-      "name": "dimsdome",
-      "userTypeId": 2,
-      "id": 2
+      "email": "Dawny@Dawny",
+      "password": "132",
+      "name": "Dawny",
+      "userTypeId": 1,
+      "id": 1
     },
     {
       "email": "mcrib@gmail.com",
-      "password": "132",
+      "password": "143",
       "name": "Nathan",
-      "userTypeId": 1,
-      "id": 3
-    },
-    {
-      "email": "jcole@real.com",
-      "password": "122",
-      "name": "Jcole",
-      "userTypeId": 1,
-      "id": 4
+      "userTypeId": 2,
+      "id": 2
     }
   ],
   "userType": [
@@ -46,32 +39,11 @@
       "name": "america",
       "url": "https://www.youtube.com/watch?v=kP75KyN-YT4",
       "description": "testing",
-      "userId": 3,
+      "userId": 1,
       "id": 6
     }
   ],
-  "chats": [
-    {
-      "message": "I totally agree with you jonathan",
-      "userId": 3,
-      "id": 2
-    },
-    {
-      "message": "I bet this site took a minute to build",
-      "userId": 3,
-      "id": 3
-    },
-    {
-      "message": "yo yo yo how does it go",
-      "userId": 2,
-      "id": 5
-    },
-    {
-      "message": "this is wild",
-      "userId": 2,
-      "id": 6
-    }
-  ],
+  "chats": [],
   "games": [
     {
       "id": 2,
