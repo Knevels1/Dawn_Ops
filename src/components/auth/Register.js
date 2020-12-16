@@ -1,4 +1,5 @@
 import React, { useRef } from "react"
+import {Admin } from "./AdminKey"
 import "./Login.css"
 
 export const Register = (props) => {
@@ -19,7 +20,7 @@ export const Register = (props) => {
     const handleRegister = (e) => {
         e.preventDefault()
 
-        if (password.current.value === verifyPassword.current.value && adminPassword.current.value === "5678") {
+        if (password.current.value === verifyPassword.current.value && adminPassword.current.value === Admin) {
             existingUserCheck()
                 .then((userExists) => {
                     if (!userExists) {
@@ -38,7 +39,7 @@ export const Register = (props) => {
                             .then(_ => _.json())
                             .then(createdUser => {
                                 if (createdUser.hasOwnProperty("id")) {
-                                    localStorage.setItem("Admin", createdUser.id)
+                                    localStorage.setItem("Admin", true)
                                     localStorage.setItem("dawnops_user", createdUser.id)
                                     props.history.push("/")
                                 }
