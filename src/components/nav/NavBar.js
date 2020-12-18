@@ -18,8 +18,13 @@ export const NavBar = (props) => {
                 <Link className="navbar__link" to="/Chat">Chat</Link>
             </li>
             <li className="navbar__item">
-                <a className="navbar__link"  href="https://www.twitch.tv/dawn_ops">Live Stream</a>
+                <a className="navbar__link"  href="https://www.twitch.tv/dawn_ops">Live</a>
             </li>
+            <Link to="/Login">
+                <button type="button" onClick={evt => {
+                (localStorage.clear())
+            }}>LogOut</button>
+            </Link>
         </ul>
     )
 }

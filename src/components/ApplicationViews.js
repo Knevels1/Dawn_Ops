@@ -40,10 +40,12 @@ export const ApplicationViews = (props) => {
             <Route exact path="/Clips" render={
                 props => <ClipForm {...props} />
             } />
+        <div className="videoContainer">
             <Route exact path="/Clips" render={
                 props => <ClipList {...props} />
             } />
-        </ClipProvider>
+        </div>
+            </ClipProvider>
     </>
     )
 }
