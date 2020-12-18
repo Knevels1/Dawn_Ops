@@ -57,11 +57,14 @@ export const Clip = ({clip}) => {
     <ReactPlayer url={clip.url}
     width="400px"
     controls />
+    <h3>DESCRIPTION</h3>
     <div>{clip.description}</div>
-    {comment.map(c => {
+    <h3>Comments</h3>
+    <div className="comments">{comment.map(c => {
       if(c.videoId === clip.id){
-        return(<h2 className="comment" color="red">{c.text}</h2>)
+        return(<div className="comment">{c.text}</div>)
       }
-    })}
+    })}</div>
+    <input name="name" placeholder="Your Comment Here Please" ref={comments} /><button className="comment__button" onClick={() => newComment()}>Add Comment</button>
       </section> ) }
 }
