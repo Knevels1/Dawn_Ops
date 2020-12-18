@@ -23,17 +23,7 @@ h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
-
-p {
-  margin-bottom: 1.5em;
-  color: #d6fcff;
-  color: darkslateblue;
-}
-
-strong {
-  font-weight: bold;
-}
-
-address {
-  margin: 0 0 1.5em;
+.videoContainer{
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -27,9 +27,6 @@ export const ChatInput = () => {
                 
                POST
             </button>
-            <button type="button" onClick={evt => {
-                    (localStorage.clear())
-                }}>LogOut</button>
     </form>
   )
 }

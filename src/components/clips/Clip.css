@@ -9,9 +9,18 @@
   }
   
   .clip {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-color: tan;
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  
+  .comments{
+    display: flex;
+    flex-direction: column;
+  }
+  .comment{
+    margin: 0.5em;
+    color: red;
+  }

@@ -36,14 +36,37 @@
   ],
   "clips": [
     {
-      "name": "america",
-      "url": "https://www.youtube.com/watch?v=kP75KyN-YT4",
-      "description": "testing",
+      "name": "13 Kills and no death!!!",
+      "url": "https://www.youtube.com/watch?v=ahVznIkZj4I&t=3s",
+      "description": "An amazing start to an amazing day",
       "userId": 1,
-      "id": 6
+      "id": 2
+    },
+    {
+      "name": "Duos",
+      "url": "https://www.youtube.com/watch?v=h9XCHxL6AgQ",
+      "description": "2v2 do I need to say anything else",
+      "userId": 1,
+      "id": 3
     }
   ],
-  "chats": [],
+  "chats": [
+    {
+      "message": "This is an amazing site",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "message": "I wonder when this site will be updated",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "message": "I am loving this site",
+      "userId": 2,
+      "id": 3
+    }
+  ],
   "games": [
     {
       "id": 2,
@@ -62,6 +85,20 @@
       "name": "Call of Duty Cold War",
       "path": "./images/cold-war-pic.jpg",
       "description": "INCREDIBLE!!!! This not only brings in a very imersive campain but brings new light to my favorite mode ZOMBIES, Honestly a masterpiece and I could spend days slaying zombodies."
+    }
+  ],
+  "comments": [
+    {
+      "text": "Man you all got messed up in the first few games",
+      "videoId": 3,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "text": "You started from the top and stayed there",
+      "videoId": 2,
+      "userId": 1,
+      "id": 2
     }
   ]
 }
